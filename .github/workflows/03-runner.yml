@@ -19,9 +19,6 @@ jobs:
             - name: ¿Qué archivos hay?
               run: 
                 dir
-            - name: ¿Qué version de terraform tengo?
-              run: 
-                terraform --version
             - name: mensaje personal
               run: 
                 echo "Hola, soy el runner"
