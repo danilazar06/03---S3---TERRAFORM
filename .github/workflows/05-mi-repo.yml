@@ -6,7 +6,7 @@ on:
         branches:
             - main
         paths:
-            - "web/**"
+            - web/**
 
 jobs:
     web-change:
@@ -16,5 +16,3 @@ jobs:
               run: echo "Se ha modificado la web"
             - name: Mostrar contenido de la web
               run: ls -la web
-
-
