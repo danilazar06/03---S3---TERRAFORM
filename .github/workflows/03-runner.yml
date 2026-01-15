@@ -18,8 +18,7 @@ jobs:
                 pwd
             - name: ¿Qué archivos hay?
               run: 
-                ls
-                ls -la
+                dir
             - name: ¿Qué version de terraform tengo?
               run: 
                 terraform --version
