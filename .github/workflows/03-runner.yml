@@ -1,0 +1,28 @@
+name: 03 runner
+
+on:
+    workflow_dispatch:
+    push:
+        branches:
+            - main
+
+jobs:
+    runner-03:
+        runs-on: ubuntu-latest
+        steps:
+            - name: ¿Quien soy?
+              run: 
+                whoami
+            - name: ¿Donde estoy?
+              run: 
+                pwd
+            - name: ¿Qué archivos hay?
+              run: 
+                ls
+                ls -la
+            - name: ¿Qué version de terraform tengo?
+              run: 
+                terraform --version
+            - name: mensaje personal
+              run: 
+                echo "Hola, soy el runner"
