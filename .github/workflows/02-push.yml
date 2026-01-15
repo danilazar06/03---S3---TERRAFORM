@@ -1,0 +1,14 @@
+name: 02 push
+
+on:
+    workflow_dispatch:
+    push:
+        branches:
+            - main
+
+jobs:
+    push-02:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hola dani
+              run: echo "Hola dani"
