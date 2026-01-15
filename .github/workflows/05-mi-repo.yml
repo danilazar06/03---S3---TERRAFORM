@@ -1,0 +1,20 @@
+name: 05-mi-repo
+
+on:
+    workflow_dispatch:
+    push:
+        branches:
+            - main
+        paths:
+            - "web/**"
+
+jobs:
+    web-change:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Aviso de cambio sobre la web
+              run: echo "Se ha modificado la web"
+            - name: Mostrar contenido de la web
+              run: ls -la web
+
+
