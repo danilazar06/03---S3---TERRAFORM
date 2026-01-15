@@ -1,0 +1,13 @@
+name: 04-filtrado
+on:
+    push:
+        branches:
+            - master
+        paths:
+            - web/**    
+jobs:
+    web-change:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Aviso de cambio sobre la web
+              run: echo "Se ha modificado la web"
