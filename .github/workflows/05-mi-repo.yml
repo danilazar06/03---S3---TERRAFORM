@@ -15,4 +15,4 @@ jobs:
             - name: Aviso de cambio sobre la web
               run: echo "Se ha modificado la web"
             - name: Mostrar contenido de la web
-              run: ls -la web
+              run: ls web
